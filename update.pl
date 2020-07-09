@@ -6,8 +6,6 @@ use File::Find;
 use Term::ANSIColor qw(:constants);
 use strict;
 use warnings;
-use Data::Dumper;
-
 use Cwd qw(getcwd);
 
 my $dir = '~/Library/ApplicationSupport/JetBrains';
