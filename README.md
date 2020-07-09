@@ -1,6 +1,6 @@
 # Intellij case sensistive fs fix
 
-If you are using JetBrains excellent tools on OS X like me and have a case sensitive file system, I guess you are sick and tired of manually editing the idea.properties to match your filesystem. Well, at least I am!
+If you are using JetBrains excellent tools on OS X like me and have a case sensitive file system, I guess you are sick and tired of manually editing the idea.properties to match your filesystem EVERYTIME the ToolBox updates your tools. Well, at least I am!
 
 ## The problem
 
