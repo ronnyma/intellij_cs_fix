@@ -24,6 +24,8 @@ sub read_and_modify
     my $cs = 0;
     open my $handle, '<', $file;
     chomp(@lines = <$handle>);
+    close $handle;
+
     for my $l (@lines) {
       if ($l =~ /case.sensitive/) {
         $cs = 1;
@@ -40,6 +42,5 @@ sub read_and_modify
     {
       print RED "$file already contained filesystem option.\n";
     }
-    close $handle;
   }
 }
