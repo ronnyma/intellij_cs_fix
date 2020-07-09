@@ -13,9 +13,9 @@ my $dir = '~/Library/ApplicationSupport/JetBrains';
 chdir $dir;
 
 
-find(\&print_name, glob($dir));
+find(\&read_and_modify, glob($dir));
 
-sub print_name
+sub read_and_modify
 {
   my @lines;
   if (/idea.properties/){
