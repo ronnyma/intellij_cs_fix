@@ -17,12 +17,12 @@ find(\&read_and_modify, glob($dir));
 
 sub read_and_modify
 {
-  my @lines;
   if (/idea.properties/){
     my $file = $File::Find::name if /idea.properties/;
 
     my $cs = 0;
     open my $handle, '<', $file;
+    my @lines;
     chomp(@lines = <$handle>);
     close $handle;
 
