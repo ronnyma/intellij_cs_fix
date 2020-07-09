@@ -8,7 +8,7 @@ Each app from jetBrains (CLion, WebStorm, IntelliJ etc) has it's own config file
 
 ## The Solution
 
-YOu need to open the file and add a directive. This is cumbersome. The PERL-script `update.pl` will do this for you automatically. Just place it into your home folder and run when needed.
+You need to open the file and add a directive. This is cumbersome. The PERL-script `update.pl` will do this for you automatically. Just place it into your home folder and run when needed.
 
 ## Assumptions
 Your config files are located in the default location *~/Library/ApplicationSupport/JetBrains*
@@ -19,7 +19,7 @@ Your config files are located in the default location *~/Library/ApplicationSupp
 Then you will get a report of which files were touched by the script.
 
 ## Cron
-Maybe place it in your cron-tab and make it run once a day. Then no more nagging and manual editing.
+Maybe place it in your cron-tab and make it run once a day? Then no more nagging and manual editing.
 
 ## Disclaimer
 I haven't written Perl in a while .. a long while. Use the script at own risk.
