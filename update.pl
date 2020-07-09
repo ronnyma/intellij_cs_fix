@@ -28,7 +28,6 @@ sub print_name
       if ($l =~ /case.sensitive/) {
         $cs = 1;
       }
-
     }
     if(!$cs)
     {
