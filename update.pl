@@ -27,7 +27,7 @@ sub read_and_modify
     close $handle;
 
     for my $l (@lines) {
-      if ($l =~ /idea\.case\.sensitive\.fs=true/) {
+      if ($l =~ /idea\.case\.sensitive\.fs=/) {
         $cs = 1;
       }
     }
@@ -40,7 +40,7 @@ sub read_and_modify
     }
     else
     {
-      print RED "$file already contained filesystem option.\n";
+      print RED "$file already contained filesystem option or set to false.\n";
     }
   }
 }
