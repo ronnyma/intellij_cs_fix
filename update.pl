@@ -1,17 +1,14 @@
 #!/usr/bin/perl -w
 
-#Intellij-fix for case sensitive filesystems on OS X
+# Intellij-fix for case sensitive filesystems on OS X
 
 use File::Find;
 use Term::ANSIColor qw(:constants);
 use strict;
 use warnings;
-use Cwd qw(getcwd);
 
+# If you have a different folder for the config, this must be updated.
 my $dir = '~/Library/ApplicationSupport/JetBrains';
-
-chdir $dir;
-
 
 find(\&read_and_modify, glob($dir));
 
