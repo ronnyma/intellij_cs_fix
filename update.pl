@@ -27,7 +27,7 @@ sub read_and_modify
     close $handle;
 
     for my $l (@lines) {
-      if ($l =~ /case.sensitive/) {
+      if ($l =~ /idea\.case\.sensitive\.fs=true/) {
         $cs = 1;
       }
     }
