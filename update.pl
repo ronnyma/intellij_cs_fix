@@ -21,7 +21,7 @@ sub read_and_modify
     my $file = $File::Find::name if /idea.properties/;
 
     my $cs = 0;
-    open my $handle, '<', $file;
+    open my $handle, '<', $file or die "Could not open file $file";
     my @lines;
     chomp(@lines = <$handle>);
     close $handle;
@@ -40,7 +40,7 @@ sub read_and_modify
     }
     else
     {
-      print RED "$file already contained filesystem option or set to false.\n";
+      print RED "$file already contained filesystem option or is set to false.\n";
     }
   }
 }
