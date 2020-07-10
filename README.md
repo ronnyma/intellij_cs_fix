@@ -4,7 +4,7 @@ If you are using JetBrain's excellent tools on OS X like me and have a case sens
 
 ## The problem
 
-Each app from JetBrains (CLion, WebStorm, IntelliJ etc) has it's own config file. By default, this file does not include the directive *idea.case.sensitive.fs=true*. I guess that most of us arent using a case sensitive filesystem. Well, I do. I come from FreeBSD and Linux (for more than one and a half decade. Having a FS which is case insensitive feels just wrong. Hence, I have opted in for case sensitivity.
+Each app from JetBrains (CLion, WebStorm, IntelliJ etc) has it's own config file. By default, this file does not include the directive *idea.case.sensitive.fs=true*. Herein lies the problem. This will cause the application to issue a warning about file case sensitiveness mismatch. I guess that most of us arent using a case sensitive filesystem. Well, I do. I come from FreeBSD and Linux (for more than one and a half decade. Having a FS which is case insensitive feels just wrong. Hence, I have opted in for case sensitivity.
 
 ## The Solution
 
