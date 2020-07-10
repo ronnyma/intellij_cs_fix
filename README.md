@@ -14,6 +14,8 @@ You need to open the file and add a directive. This is cumbersome. The PERL-scri
 Your config files are located in the default location *~/Library/ApplicationSupport/JetBrains*
 
 ## Synopsis
+    ❯ git clone https://github.com/ronnyma/intellij_cs_fix.git
+    ❯ cd intellij_cs_fix
     ❯ chmod +x update.pl
     ❯ ./update.pl
 Then you will get a report of which files were touched by the script.
