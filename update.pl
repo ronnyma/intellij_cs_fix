@@ -8,7 +8,7 @@ use strict;
 use warnings;
 
 # If you have a different folder for the config, this must be updated.
-my $dir = '~/Library/ApplicationSupport/JetBrains';
+my $dir = '~/Library/Application\ Support/JetBrains';
 
 find(\&read_and_modify, glob($dir));
 
